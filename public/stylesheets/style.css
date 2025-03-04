@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+
+}
+
+/*navbar*/
+.navbar{
+  background-color: rgb(107, 180, 33);
+  height: 65px;
+  margin-bottom: 80px;
+}
+
+.navbar > .container-fluid {
+  display: flex;
+}
+
+.navbar > .container-fluid > .navbar-brand {
+  display: flex;
+  color: #FFF;
+  gap: 15px;
+  font-weight: 600;
+  font-family: "Outfit";
+  padding: 0;
+  margin: 0;
+}
+
+
+.navbar > .container-fluid > .navbar-brand > img{
+  width: 35px;
+  height: 35px;
+
+}
+
+@media(max-width: 500px){
+  .navbar > .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*content*/
+.content > .container-fluid{
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+}
+
+.content > .container-fluid > h1{
+  font-family: "Montserrat";
+  font-size: 3.5em;
+}
+
+.content > .container-fluid > h3{
+  font-family: "Montserrat";
+  font-size: 2em;
+}
+
+@media(min-width:1200px){
+  .content > .container-fluid{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+  }
+
+  .content > .container-fluid > h1{
+    font-family: "Montserrat";
+    font-size: 4em;
+  }
+
+  .content > .container-fluid > h3{
+    font-family: "Montserrat";
+    font-size: 2.5em;
+  }
+}
+
+@media(max-width:830px){
+  .content > .container-fluid{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+
+  .content > .container-fluid > h1{
+    font-family: "Montserrat";
+    font-size: 2em;
+  }
+
+  .content > .container-fluid > h3{
+    font-family: "Montserrat";
+    font-size: 1.5em;
+  }
+}
+
+/*btn*/
+.button-container{
+  display: flex;
+  width: 100%;
+  margin-top: 45px;
+  justify-content: center;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: rgb(119, 202, 37);
+  font-family: "Outfit";
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 500;
+  transition: opacity 150ms ease-in-out;
+  text-decoration: none;
+  height: 50px;
+  border-radius: 8px;
+  
+}
+
+.button:hover{
+  opacity: calc(0.7);
+}
+
+@media(min-width: 750px){
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: rgb(119, 202, 37);
+    font-family: "Outfit";
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 500;
+    transition: opacity 150ms ease-in-out;
+    text-decoration: none;
+    height: 50px;
+    border-radius: 8px;
+  }
+}
+
+/*cards*/
+
+.description{
+  margin-top: 60px;
+  display: flex;
+  
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin: 0px 45px;
+}
+
+.card{
+
+  width: 440px;
+}
+
+.card-img-top{
+  height: 240px;
+  width: 100%;
+}
+
+@media(min-width: 630px){
+  .row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 45px;
+  }
+}
+
+@media(max-width: 630px){
+  .row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 45px;
+  }
+  .card-img-top{
+    height: 180px;
+    width: 100%;
+  }
+  .card{
+    width: 320px;
+  }
+}
+
+@media(max-width: 400px){
+  .row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 45px;
+  }
+  .card-img-top{
+    height: 150px;
+    width: 100%;
+  }
+  .card{
+    width: 270px;
+  }
+}
+
+@media(max-width: 1430px){
+  .row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 45px;
+  }
+}
+
+/*footer*/
+.footer{
+  width: 100%;
+  padding: 45px 0px;
+  background-color: #f1f1f1;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.footer > .row{
+  display: flex;
+  flex-direction: row;
+  margin:0;
+}
+
+.footer > .row > .col >ul{
+  list-style: none;
+}
+
+.footer > .row > .col >ul > p{
+  margin: 0;
+  padding: 0;
+}
+
+.footer > .row > .col >ul > li> a{
+  text-decoration: none;
+  color: rgb(71, 117, 24);
+  transition: opacity 200ms ease-in-out;
+}
+
+.footer > .row > .col >ul > li> a:hover{
+  opacity: calc(0.7);
+}
