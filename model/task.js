@@ -19,4 +19,4 @@ const TaksSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('tarefa', TaksSchema);
+module.exports = mongoose.model('tarefas', TaksSchema);

@@ -52,6 +52,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(PORT, ()=> console.log(`Servidor rodando na porta ${PORT}`))
+app.listen(PORT,'0.0.0.0', ()=> console.log(`Servidor rodando na porta ${PORT}`))
 
 module.exports = app;

@@ -2,3 +2,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html, body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+/*navbar*/
+.navbar{
+    background-color: rgb(107, 180, 33);
+    height: 65px;
+    margin-bottom: 80px;
+}
+
+.navbar > .container-fluid {
+    display: flex;
+}
+
+.navbar > .container-fluid > .navbar-brand {
+    display: flex;
+    color: #FFF;
+    gap: 15px;
+    font-weight: 600;
+    font-family: "Outfit";
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar > .container-fluid > .navbar-brand > img{
+    width: 35px;
+    height: 35px;
+
+}
+
+@media(max-width: 500px){
+    .navbar > .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+}
