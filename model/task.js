@@ -15,7 +15,6 @@ const TaksSchema = new mongoose.Schema({
     },
     prazo:{
         type: Date,
-        required: true
     }
 });
 
