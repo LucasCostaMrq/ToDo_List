@@ -3,9 +3,12 @@ const express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
+//URI
 var config = require('./configURL')
 
 //routes
+var insertRouter = require('./routes/insertTask');
 var indexRouter = require('./routes/index');
 var tasksRouter = require('./routes/tasks');
 
@@ -30,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //indexing routes
 app.use('/', indexRouter);
 app.use('/tasks', tasksRouter);
+app.use('/insert', insertRouter);
 
 //conexão com o BD
 mongoose.connect(config.MONGO_URI)
