@@ -1,0 +1,22 @@
+# Dependências do Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+logs/
+*.log.*
+
+# Diretório binário
+bin/
+
+# Arquivos de configuração sensíveis
+configURL.js
+.env
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
